@@ -1,6 +1,8 @@
 {
+    "name": "mswalid/sf-skeleton",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
+    "description": "A minimal Symfony/docker project to create applications",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
