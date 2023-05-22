@@ -27,23 +27,6 @@ services:
     networks:
       - threeci_network
 
-  mysql:
-    container_name: mysql
-    build:
-      context: .
-      target: threeci-mysql
-    environment:
-      MYSQL_DATABASE: 'db'
-      MYSQL_USER: 'user'
-      MYSQL_PASSWORD: 'password'
-      MYSQL_ROOT_PASSWORD: 'password'
-    ports:
-      - "3306:3306"
-    volumes:
-      - db:/var/lib/mysql
-    networks:
-      - threeci_network
-
 volumes:
   db:
     driver: local

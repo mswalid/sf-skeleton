@@ -53,5 +53,3 @@ FROM nginx:${NGINX_VERSION}-alpine${ALPINE_VERSION} AS threeci-nginx
 
 # Config nginx
 COPY .docker/nginx/conf.d /etc/nginx/conf.d/
-
-FROM mysql:${MYSQL_VERSION}-debian AS threeci-mysql
