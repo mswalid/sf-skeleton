@@ -2,9 +2,11 @@ version: "3.9"
 
 services:
     php-fpm:
+        container_name: sf-skeleton-php-fpm
         ports:
             - "9000:9000"
 
     nginx:
+        container_name: sf-skeleton-nginx
         ports:
             - "8080:80"
